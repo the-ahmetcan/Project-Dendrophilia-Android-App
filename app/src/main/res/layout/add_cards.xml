@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp" >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_card"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/card_image"
+        app:cardBackgroundColor="?attr/colorOnPrimary"
+        app:cardCornerRadius="15dp">
+
+        <ImageView
+            android:layout_width="370dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="185dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/add_visualImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="230dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:rotation="-90"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/add_visualName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/plant_name"
+            android:fontFamily="@font/proximanova_regular"
+            android:textSize="13pt" />
+
+        <TextView
+            android:id="@+id/add_visualDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="47dp"
+            android:text="@string/plant_desc"
+            android:textStyle="italic"
+            android:textColor="?attr/colorPrimary" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

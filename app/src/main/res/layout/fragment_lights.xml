@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_light_controls"
+        android:layout_width="330dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="?attr/colorPrimaryVariant"
+        app:cardCornerRadius="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Plant light controls:" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_light_timer"
+        android:layout_width="330dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/card_light_controls"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="?attr/colorPrimaryVariant"
+        app:cardCornerRadius="15dp">
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

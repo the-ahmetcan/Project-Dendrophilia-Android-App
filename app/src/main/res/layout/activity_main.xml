@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_label"
+        android:textSize="18pt"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/proximanova_regular"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_local_florist_24"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_settings_24"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="10dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5" />
+
+    <ImageButton
+        android:id="@+id/add_button"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="355dp"
+        android:radius="30dip"
+        android:background="@drawable/rounded_edges"
+        android:src="@drawable/ic_baseline_add_24"/>
+
+    <TextView
+        android:id="@+id/alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alerts"
+        android:textSize="14pt"
+        android:layout_marginTop="430dp"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/proximanova_regular"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_warning_24"
+        android:layout_marginTop="437dp"
+        android:layout_marginLeft="110dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/alert_square"
+        android:layout_width="370dp"
+        android:layout_height="360dp"
+        android:layout_margin="20dp"
+        android:layout_below="@id/alert"
+        app:cardBackgroundColor="?attr/colorOnPrimary"
+        app:cardCornerRadius="20dp" >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/alert_card"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/primaryColor"
+            app:cardCornerRadius="15dp" >
+
+            <TextView
+                android:id="@+id/alert_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="20dp"
+                android:text="Cilantro #1 needs more water!"
+                android:textSize="9pt"
+                android:textStyle="bold"
+                android:fontFamily="@font/proximanova_regular"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
